@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="Нажми и узнай о мечах" onclick="alertinfo()">
+    <script>
+        
+        class sword {
+
+            _magicvalue = 10;
+            #setmagicvalue(value) {
+                this._magicvalue = value;
+            }
+            _checkmagicsword(magicvalue) {
+                if (magicvalue < 1) throw new Error('Это не магический меч');
+            }
+
+            constructor (name, rarity, type, rank, value) {
+                this._name = name,
+                this._rarity = rarity,
+                this.type = type,
+                this.rank = rank,
+                this.value
+            }
+            static rank = 'A'; 
+            static printInfo() {
+                alert('Все эти мечи, кроме одного, принадлежали Легендарным личностям из истории');
+            }
+        }
+        let Excalibur = new sword(
+            'Экскалибур, Меч Обещанной Победы',
+            'Божественный',
+            'Анти-Крепость, Противопехотный',
+            'A, A++',
+            6)
+        let Arondite = new sword
+            ('Арондайт: Немеркнущий Свет Озера',
+            'Божественный',
+            'Противопехотный',
+            'A++',
+            3)
+        
+        let ParacelsSword = new sword 
+           ('Меч Парацельса: Волшебный Меч Элементалиста',
+            'Легендарный',
+            'Анти-Армия',
+            'A+',
+            7)
+        
+        let UsualSword = new sword 
+            ('Железный меч',
+            'Обычный',
+            'Анти-Юнит',
+            'E',
+            0)
+            console.log(Excalibur);
+            console.log(Arondite);
+            console.log(ParacelsSword);
+            console.log(UsualSword)
+    </script>
+</body>
+</html>

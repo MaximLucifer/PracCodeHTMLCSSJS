@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class koshkoobr {
+            constructor(family) {
+                this.family = family
+            }
+        }
+        class tigers extends koshkoobr {
+            constructor(family, name, podvidi) {
+                super(family);
+                this.name = name,
+                this.podvidi = podvidi
+            }
+        }
+        class lvi extends koshkoobr {
+            constructor(family, name, podvidi) {
+                super(family);
+                this.name = name,
+                this.podvidi = podvidi
+            }
+        }
+        let tiger = new tigers(
+            'Семейство кошачьих',
+            'Тигр (лат. Panthera tigris)',
+            'Подвиды: Амурский тигр, Бенгальский тигр, Индокитайский тигр, Малайский тигр, Китайский тигр'
+        )
+
+        let lev = new lvi(
+            'Семейство кошачьих',
+            'Лев (лат. Panthera leo)',
+            'Подвиды: Panthera leo persica, Panthera leo leo, Panthera leo senegalensis, Panthera leo azandica, Panthera leo nubica'
+        )
+        console.log(lev)
+        console.log(tiger)
+    </script>
+</body>
+</html>
