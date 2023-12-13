@@ -51,7 +51,7 @@
   text-align: left;
   border: none;
   padding: 10px 15px;
-  background: #d8d8d8;
+  background: #b1d8d8;
   font-size: 14px;
 }
 .table thead tr th:first-child {
@@ -68,7 +68,7 @@
   vertical-align: top;
 }
 .table tbody tr:nth-child(even){
-  background: #f3f3f3;
+  background: #a3f3f3;
 }
 .table tbody tr td:first-child {
   border-radius: 8px 0 0 8px;
